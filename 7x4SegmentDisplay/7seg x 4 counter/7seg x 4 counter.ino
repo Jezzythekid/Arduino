@@ -1,11 +1,11 @@
 int Status = 0;
-int Tijd = 0;
-int Getal1;
+int Tijd = 0;   // Tijd = Time
+int Getal1;     // Getal = Digit
 int Getal2;
 int Getal3;
 int Getal4;
 
-byte Nummers[10][8] {
+byte Nummers[10][8] {     // Nummers = Numbers
   {1,1,1,0,1,1,0,1}, //0
   {0,1,1,0,0,0,0,0}, //1
   {1,1,0,0,1,1,1,0}, //2
