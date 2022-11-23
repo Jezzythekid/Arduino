@@ -1,9 +1,9 @@
-int vKnop = 0;
-int Knop = 13;
+int vKnop = 0; 
+int Knop = 13;  //Knop = Button
 int status = 1;
 
 void setup() {
-  // led's als output
+  // led's als output || led's as output
   for (int i = 2; i <= 11; i++) {
     pinMode(i, OUTPUT);
   }
@@ -24,18 +24,18 @@ void WaitRelease() {
 }
 
 void NightRider() {
-  // looplichtje zoals nightrider
+  // looplichtje zoals nightrider || animated lights like nightrider
 
   for (int i = 2; i <= 9; i++) {
     digitalWrite(i, 1);
 
-    //verkomen van storing met andere Q's
+    //verkomen van storing met andere pin's ||  preventing disturbance with other pin's
     if (i < 8) {
     digitalWrite(i + 1, 1);
     digitalWrite(i + 2, 1);
     }
 
-    //de laatste led uitschakelen
+    //de laatste led uitschakelen || turn off previous led
     digitalWrite(i - 1, 0);
     delay(120);
   }
