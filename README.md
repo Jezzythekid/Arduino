@@ -6,7 +6,7 @@ Let me start off by saying I am learning.
 
 2nd off, I'm Dutch.
   I am trying to give my variables or comments English names, but if im confused,
-  or debugging it helps me to give names in my native language.
+  or debugging, it helps me to give names in my native language.
   
 With that out of the way let me give some background information about this project of mine:
 
