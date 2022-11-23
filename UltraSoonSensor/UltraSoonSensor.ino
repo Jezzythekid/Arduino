@@ -1,3 +1,4 @@
+// UltraSoonSensor = UltraSonicSensor
 const int trigPin = 3;
 const int echoPin = 4;
 
