@@ -23,7 +23,7 @@ int PosStep = 0;
 int PosServ = 0;
 int PinAx = 0;
 int PinAy = 1;
-int stap = 0;
+int stap = 0;     // stap = step
 int speed = 0;
 
 void setup() {
