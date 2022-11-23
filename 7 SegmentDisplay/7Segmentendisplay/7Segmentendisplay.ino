@@ -1,11 +1,10 @@
 int Segment = 1;
-int Knop = 11;
+int Knop = 11; 	//Knop = Button
 int vLed = 0;
-int vKnop = 0;
+int vKnop = 0;	//vKnop = vButton
 int Status = 1;
 
 void setup() {
-  // put your setup code here, to run once:
   Serial.begin(9600);
   pinMode(Knop, INPUT);
   pinMode(2, OUTPUT);
@@ -19,7 +18,6 @@ void setup() {
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
   vKnop = digitalRead(Knop);
   
   //for (int i = 2; i <= 9; i++) {
