@@ -1,7 +1,7 @@
 int Segment = 1;
-int Knop = 10;
+int Knop = 10;    // Knop = Button
 int vLed = 0;
-int vKnop = 0;
+int vKnop = 0;    //vKnop = vButton
 int Status = 0;
 
 void setup() {
