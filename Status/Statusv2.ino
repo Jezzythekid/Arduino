@@ -1,5 +1,5 @@
 int Segment = 1;
-int Knop = 11;
+int Knop = 11;		//Knop = Button
 int vLed = 0;
 int vKnop = 0;
 int Status = 1;
