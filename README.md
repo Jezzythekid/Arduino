@@ -19,7 +19,7 @@ I'll do my best to explain my code as good as i can and i will try to translate 
 English.
 
 I would really apreciate it if you (the reader) left a comment about my code.
-I'd like to know if my code is bad, or has bugs, also if my code can be improved its all a learning curve for me.
+I'd like to know if my code is bad, or has bugs, also if my code can be improved. Its all a learning curve for me.
 
 Thanks for reading.
 
