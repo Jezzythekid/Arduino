@@ -1,5 +1,5 @@
 int Status = 0;
-int Tijd = 0;
+int Tijd = 0;   //Tijd = Time
 
 byte Nummers[10][8] {
   {1,1,1,0,1,1,0,1}, //0
