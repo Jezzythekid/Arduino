@@ -1,12 +1,12 @@
 
 
 int Segment = 1;
-int Knop = 10;
+int Knop = 10;  //Knop = Button
 int vLed = 0;
-int vKnop = 0;
+int vKnop = 0;  //vKnop = vButton
 int Status = 0;
 
-byte Nummers[10][8] {
+byte Nummers[10][8] {     //Nummers = Numbers
   {1,1,1,0,1,1,0,1}, //0
   {0,1,1,0,0,0,0,0}, //1
   {1,1,0,0,1,1,1,0}, //2
@@ -49,7 +49,7 @@ void Step() {
 }
 
 void loop() {
-  // doorlopen van de stappen.
+  // doorlopen van de stappen. || Different states of the software.
   vKnop = digitalRead(Knop);
 
   if (vKnop) {
