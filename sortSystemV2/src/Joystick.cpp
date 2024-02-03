@@ -22,22 +22,58 @@ int joystick_y() {
 }
 
 bool joystick_up() {
-    if (joystick_y() < 50) return true;
+    static bool holding = false;
+
+    if (joystick_y() > 50) {
+        holding = false;
+        return false;
+    } else if (!holding) {   // if joystick < 50 and holding is false return true
+        holding = true;
+        return true;
+    }
+
     return false;
 }
 
 bool joystick_down() {
-    if (joystick_y() > 950) return true;
+    static bool holding = false;
+
+    if (joystick_y() < 950) {
+        holding = false;
+        return false;
+    } else if (!holding) {   // if joystick < 50 and holding is false return true
+        holding = true;
+        return true;
+    }
+
     return false;
 }
 
 bool joystick_left() {
-    if (joystick_x() < 50) return true;
+    static bool holding = false;
+
+    if (joystick_x() > 50) {
+        holding = false;
+        return false;
+    } else if (!holding) {   // if joystick < 50 and holding is false return true
+        holding = true;
+        return true;
+    }
+
     return false;
 }
 
 bool joystick_right() {
-    if (joystick_x() > 950) return true;
+    static bool holding = false;
+
+    if (joystick_x() < 950) {
+        holding = false;
+        return false;
+    } else if (!holding) {   // if joystick < 50 and holding is false return true
+        holding = true;
+        return true;
+    }
+
     return false;
 }
 

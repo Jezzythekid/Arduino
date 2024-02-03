@@ -5,6 +5,12 @@
 #ifndef SORTSYSTEMV2_LCD_H
 #define SORTSYSTEMV2_LCD_H
 
+typedef struct {
+    const char *textUp;
+    const char *textDown;
+
+} lcdText_t;
+
 enum {
 
     LCD_RS = 12,
@@ -23,6 +29,6 @@ void setup_LCD();
 /// Function writes a string to an LCD display
 /// @param string to write
 /// @param row row to write
-void write_LCD(char *stringup, char *stringdown);
+void write_LCD(lcdText_t *text);
 
 #endif //SORTSYSTEMV2_LCD_H
