@@ -19,18 +19,16 @@ void setup_LCD() {
 
 }
 
-void write_LCD(char *stringup, char *stringdown){
+void write_LCD(lcdText_t *text){
 
     lcd.clear();
 
     lcd.setCursor(0, 0);
-    lcd.print(stringup);
+    lcd.print(text->textUp);
 
     lcd.setCursor(0, 1);
-    lcd.print(stringdown);
+    lcd.print(text->textDown);
 
-//    lcd.setCursor(0, 1);
-//    lcd.print(millis()/1000);
 
 }
 

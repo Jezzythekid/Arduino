@@ -18,16 +18,8 @@ void setup() {
     setup_LCD();
     setup_joystick();
 
-/*
-    static int sr1 = B01111111;
-    static int sr2 = B10000000;
-
-    bitToggle(sr1, 1);
-    int newsr2 = bitToggle(sr2, 8-2);
-
-    write_shiftRegister1(sr1);
-    write_shiftRegister2(newsr2);
-*/
+    lcdText_t startup = {"Move joystick to", "begin."};
+    write_LCD(&startup);
 
 
 }
@@ -41,8 +33,6 @@ void loop() {
     //blink_coordinate(servo);
 
     menu_show();
-
-    delay(200);
 
 
 }
