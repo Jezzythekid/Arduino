@@ -20,5 +20,6 @@ bool joystick_up();
 bool joystick_down();
 bool joystick_left();
 bool joystick_right();
+bool joystick_press();
 
 #endif //SORTSYSTEMV2_JOYSTICK_H

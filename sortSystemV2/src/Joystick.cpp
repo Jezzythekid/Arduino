@@ -41,3 +41,8 @@ bool joystick_right() {
     return false;
 }
 
+bool joystick_press() {
+    if (digitalRead(JS_SW)) return true;
+    return false;
+}
+

@@ -4,6 +4,7 @@
 
 #ifndef SORTSYSTEMV2_LCD_H
 #define SORTSYSTEMV2_LCD_H
+#include "Menu.h"
 
 enum {
 
@@ -23,6 +24,8 @@ void setup_LCD();
 /// Function writes a string to an LCD display
 /// @param string to write
 /// @param row row to write
-void write_LCD(char *stringup, char *stringdown);
+void write_LCD(const char *stringup, const char *stringdown);
+
+void write_menu_LCD(screen_t *screen);
 
 #endif //SORTSYSTEMV2_LCD_H
