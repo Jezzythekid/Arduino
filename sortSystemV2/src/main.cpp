@@ -1,4 +1,3 @@
-#include "stdlib.h"
 #include "Arduino.h"
 #include "Shiftregister.h"
 #include "LCD.h"
@@ -19,7 +18,7 @@ void setup() {
     setup_joystick();
 
     lcdText_t startup = {"Move joystick to", "begin."};
-    write_LCD(&startup);
+    write_LCD(startup);
 
 
 }

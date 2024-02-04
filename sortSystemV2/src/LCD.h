@@ -12,15 +12,19 @@ typedef struct {
 } lcdText_t;
 
 enum {
-
+    // LCD pins
     LCD_RS = 12,
     LCD_Enable = 11,
-
     LCD_D4 = 10,
     LCD_D5 = 9,
     LCD_D6 = 8,
-    LCD_D7 = 7
+    LCD_D7 = 7,
+};
 
+// custom characters
+enum {
+    OMEGA,
+    MU
 };
 
 /// Function that initializes the LCD display
@@ -29,6 +33,8 @@ void setup_LCD();
 /// Function writes a string to an LCD display
 /// @param string to write
 /// @param row row to write
-void write_LCD(lcdText_t *text);
+void write_LCD(lcdText_t text);
+
+void add_custom_char(int colum, int row, int character);
 
 #endif //SORTSYSTEMV2_LCD_H
